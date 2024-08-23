@@ -31,9 +31,10 @@ form.addEventListener('submit', function(event) {
     
     for ( let i = 0; i < totCells; i++) {                           // giro per quante 'celle' voglio nella griglia, variabili di partenza a noi note
         const cell = createCell(i + 1);                             // invoco la funzione per generare le celle di nodi che voglio. Il Parametro è la variabile di controllo del for in cui è inserita la funzione, aumentato di 1 per stamapre i numeri da 1 a 100
+                                             
+        cell.addEventListener('click', function() {                 // per ogni cella creata aggiungo un event listener, che reagirà al click
+            console.log(this.innerText, ': è il contenuto della cella che hai cliccato'); // stampa in console del contenuto testuale del nodo cliccato, grazie a this
+        });
         grid.appendChild(cell);                                     // aggiungo alla griglia in pagina il nodo appena creato
-        //cell.addEventListener('click', function() {
-            //console.log(this.innerText, ': è il contenuto della cella che hai cliccato');
-        
     }
 })
