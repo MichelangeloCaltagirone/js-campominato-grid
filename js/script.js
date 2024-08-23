@@ -34,6 +34,7 @@ form.addEventListener('submit', function(event) {
                                              
         cell.addEventListener('click', function() {                 // per ogni cella creata aggiungo un event listener, che reagirà al click
             console.log(this.innerText, ': è il contenuto della cella che hai cliccato'); // stampa in console del contenuto testuale del nodo cliccato, grazie a this
+            this.classList.add('clicked');                          // sempre al click sulla cella, aggiungo la classe clicked, per cambiarne il colore di background in pagina, si può migliorare con toggle al posto di add
         });
         grid.appendChild(cell);                                     // aggiungo alla griglia in pagina il nodo appena creato
     }

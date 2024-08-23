@@ -54,3 +54,6 @@ button {
     color: rgb(159, 108, 108);
     cursor: pointer;
 }
+.clicked {
+    background-color: brown;
+}
