@@ -1,6 +1,51 @@
 /* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+/* Generals */
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+main {
+    background-color: aquamarine;
+    padding: 2rem 0;
+}
+footer {
+    padding: 1rem 0 0 1rem;
+}
+button {
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+
+/* Utility */
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.grid {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.grid div {
+    flex-basis: 10%;
+    height: 10%;
+    border: 2px solid white;
 }
