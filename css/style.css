@@ -37,15 +37,20 @@ button {
     max-width: 1080px;
     margin: 0 auto;
 }
-.grid {
+#grid {
     width: 550px;
     height: 550px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
-.grid div {
+#grid .cell {
     flex-basis: 10%;
     height: 10%;
     border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(159, 108, 108);
+    cursor: pointer;
 }

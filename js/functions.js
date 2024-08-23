@@ -27,3 +27,20 @@ Note:
 - questo bonus richiederà un evento diverso dal 'click'
 - questo bonus richiederà una riflessione extra per quel che riguarda il calcolo della larghezza delle celle :occhiolino:
  */
+
+
+// createCell
+
+// Funzione per generare un nodo, in questo caso un div
+/**
+ * 
+ * @param {content} any
+ * Parametro che sarà inserito come contenuto del nodo
+ * @returns div class='cell'
+ */
+function createCell(content) {
+    const cell = document.createElement('div');       // Creo l'elemento, in questo caso sarà sempre un div, perche è scritto in hardcode, e non come parametro
+    cell.className = 'cell';                          // Setto la classe 'cell', dato che non ne aveva
+    cell.append(content);                             // 'inserisco' il parametro passato alla funzione nell'elemento
+    return cell;                                      // ritorno il nodo creato a chi mi invoca
+};
